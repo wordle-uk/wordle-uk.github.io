@@ -1,90 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Wordle Clone</title>
     <script src="script.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="alert-container" data-alert-container></div>
     <div data-guess-grid class="guess-grid">
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
-      <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
     </div>
     <div data-keyboard class="keyboard">
-      <button class="key" data-key="Q">Q</button>
-      <button class="key" data-key="W">W</button>
-      <button class="key" data-key="E">E</button>
-      <button class="key" data-key="R">R</button>
-      <button class="key" data-key="T">T</button>
-      <button class="key" data-key="Y">Y</button>
-      <button class="key" data-key="U">U</button>
-      <button class="key" data-key="I">I</button>
-      <button class="key" data-key="O">O</button>
-      <button class="key" data-key="P">P</button>
-      <div class="space"></div>
-      <button class="key" data-key="A">A</button>
-      <button class="key" data-key="S">S</button>
-      <button class="key" data-key="D">D</button>
-      <button class="key" data-key="F">F</button>
-      <button class="key" data-key="G">G</button>
-      <button class="key" data-key="H">H</button>
-      <button class="key" data-key="J">J</button>
-      <button class="key" data-key="K">K</button>
-      <button class="key" data-key="L">L</button>
-      <div class="space"></div>
-      <button data-enter class="key large">Enter</button>
-      <button class="key" data-key="Z">Z</button>
-      <button class="key" data-key="X">X</button>
-      <button class="key" data-key="C">C</button>
-      <button class="key" data-key="V">V</button>
-      <button class="key" data-key="B">B</button>
-      <button class="key" data-key="N">N</button>
-      <button class="key" data-key="M">M</button>
-      <button data-delete class="key large">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            fill="var(--color-tone-1)"
-            d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"
-          ></path>
-        </svg>
-      </button>
+        <button class="key" data-key="Q">Q</button>
+        <button class="key" data-key="W">W</button>
+        <button class="key" data-key="E">E</button>
+        <button class="key" data-key="R">R</button>
+        <button class="key" data-key="T">T</button>
+        <button class="key" data-key="Y">Y</button>
+        <button class="key" data-key="U">U</button>
+        <button class="key" data-key="I">I</button>
+        <button class="key" data-key="O">O</button>
+        <button class="key" data-key="P">P</button>
+        <div class="space"></div>
+        <button class="key" data-key="A">A</button>
+        <button class="key" data-key="S">S</button>
+        <button class="key" data-key="D">D</button>
+        <button class="key" data-key="F">F</button>
+        <button class="key" data-key="G">G</button>
+        <button class="key" data-key="H">H</button>
+        <button class="key" data-key="J">J</button>
+        <button class="key" data-key="K">K</button>
+        <button class="key" data-key="L">L</button>
+        <div class="space"></div>
+        <button data-enter class="key large">Enter</button>
+        <button class="key" data-key="Z">Z</button>
+        <button class="key" data-key="X">X</button>
+        <button class="key" data-key="C">C</button>
+        <button class="key" data-key="V">V</button>
+        <button class="key" data-key="B">B</button>
+        <button class="key" data-key="N">N</button>
+        <button class="key" data-key="M">M</button>
+        <button data-delete class="key large">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path fill="var(--color-tone-1)" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
+            </svg>
+        </button>
     </div>
-  </body>
+    
+    <section class="article">
+        <h1>Welcome to Wordle UK</h1>
+        <p>Welcome to Wordle UK, where word puzzle enthusiasts gather to test their vocabulary skills in a fun and engaging game format. Whether you're a seasoned player or new to word games, Wordle UK offers an enjoyable challenge suitable for all levels.</p>
+
+        <h2>Getting Started</h2>
+        <p>To start playing Wordle UK, simply visit our website on your preferred device—whether it's your desktop computer, mobile phone, or tablet. The game is designed to be user-friendly and accessible across different platforms, ensuring you can enjoy it anytime, anywhere.</p>
+
+        <h2>How to Play</h2>
+        <p>In Wordle UK, the objective is straightforward: guess the hidden five-letter word within six attempts. Each guess will be highlighted with colors indicating how close your guess is to the correct word. Green indicates correct letters in the right position, while yellow means correct letters in the wrong position. Use these clues strategically to deduce the word before you run out of guesses!</p>
+
+        <h2>Game Mechanics</h2>
+        <p>The game mechanics of Wordle UK are designed to be intuitive and easy to grasp. Simply enter your guess for the five-letter word, and the game will provide immediate feedback with color-coded clues to guide you closer to the solution. Each round presents a new challenge, keeping the gameplay fresh and engaging.</p>
+
+        <h2>Gameplay Features</h2>
+        <p>Wordle UK includes several features that enhance your gaming experience. Unlike the original Wordle game, Wordle UK offers a customizable difficulty level, allowing players to adjust the challenge according to their skill level. Additionally, the game supports multiple languages, ensuring inclusivity and accessibility for a global audience.</p>
+
+        <h2>Strategy Tips</h2>
+        <p>To maximize your chances of guessing the word correctly, consider starting with vowels and common consonants in your first few guesses. Pay close attention to the color-coded feedback after each guess, as it provides valuable hints to refine your subsequent attempts. Avoid random guessing and leverage the clues strategically to solve the puzzle efficiently.</p>
+
+        <h2>Scoring System</h2>
+        <p>Your score in Wordle UK is based on how quickly you can guess the correct word within the allowed six attempts. The faster you solve the puzzle, the higher your score will be. Scores are displayed after each round, allowing you to track your progress and compete with friends or other players on our leaderboard.</p>
+
+        <h2>Community and Competition</h2>
+        <p>Join the Wordle UK community to engage in friendly competition and compare your scores on our leaderboard. Challenge yourself to improve your skills and climb the rankings, or share your achievements with friends through social media integration. Wordle UK fosters a supportive and interactive community where players can connect and celebrate their love for word games.</p>
+
+        <p>Get ready to immerse yourself in the world of words with Wordle UK. Start playing today and discover why players around the world are hooked on this addictive word puzzle game. Join our community, challenge your friends, and enjoy hours of word-solving fun!</p>
+
+        <h2>FAQs</h2>
+        <p><strong>Q: Can I play Wordle UK on my smartphone?</strong></p>
+        <p>A: Yes, Wordle UK is optimized for mobile play, ensuring a seamless experience on smartphones and tablets.</p>
+        
+        <p><strong>Q: How often are the words updated in Wordle UK?</strong></p>
+        <p>A: Words in Wordle UK are regularly updated to ensure a diverse and challenging gameplay experience for all players.</p>
+        
+        <p><strong>Q: Is there a time limit for each round in Wordle UK?</strong></p>
+        <p>A: No, there is no time limit for solving each round in Wordle UK. Players can take their time to strategize and guess the word.</p>
+        
+        <p><strong>Q: Can I replay the same word in Wordle UK?</strong></p>
+        <p>A: No, each round in Wordle UK presents a new, unique word to solve. This keeps the game fresh and unpredictable.</p>
+        
+        <p><strong>Q: Are there different difficulty levels in Wordle UK?</strong></p>
+        <p>A: Yes, Wordle UK offers customizable difficulty levels, allowing players to adjust the challenge according to their preference.</p>
+    </section>
+</body>
 </html>
