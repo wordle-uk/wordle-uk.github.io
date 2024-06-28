@@ -87,7 +87,7 @@ body {
 
 .tile {
   font-size: 2em;
-  color: white;
+  color: black;
   border: 0.05em solid hsl(240, 2%, 23%);
   text-transform: uppercase;
   font-weight: bold;
